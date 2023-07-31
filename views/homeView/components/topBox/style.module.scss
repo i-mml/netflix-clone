@@ -1,0 +1,121 @@
+.topBox {
+  min-height: 45vh;
+  background-image: url("/images/NetflixBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 5% 100%;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.topBoxHeader {
+  display: flex;
+}
+
+.logo {
+  margin: 0 8.5%;
+}
+
+.signInBtn {
+  width: 80px;
+  height: 30px;
+  margin: 2% 8.3% 0 auto;
+  border-radius: 0.25rem;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(229, 9, 20);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+  margin: 18% auto 0;
+}
+
+.subTitle {
+  text-align: center;
+  margin: 1.5% 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.emailBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5px;
+  margin: 5px 0 20px 0;
+}
+
+.emailInput {
+  width: 35%;
+  min-height: 50px;
+  min-width: 300px;
+  padding: 16px;
+  margin-right: 0.5%;
+  border-radius: 0.25rem;
+  background: rgba(31, 30, 30, 0.41);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.7px);
+  -webkit-backdrop-filter: blur(4.7px);
+  border: 0.5px solid #bdbdbd;
+  color: #bdbdbd;
+  font-size: 18px;
+}
+
+.emailBtn {
+  width: 10%;
+  background-color: rgb(229, 9, 20);
+  color: white;
+  border: 0;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.promotionBox {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+  background: #ff00cc;
+  background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+  background: linear-gradient(to right, #333399, #ff00cc);
+  padding: 16px;
+  margin: auto;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.descBox {
+  margin-bottom: 16px;
+  color: white;
+}
+
+.desc1 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.desc2 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.link {
+  color: #4e8bef !important;
+  cursor: pointer;
+  text-decoration: underline;
+}
