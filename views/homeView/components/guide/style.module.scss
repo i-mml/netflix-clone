@@ -1,0 +1,87 @@
+.guideContainer {
+  width: 100%;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+  .guideItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+    .textBox {
+      width: 70%;
+      margin: 10%;
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+      .title {
+        width: 80%;
+        font-size: 3rem;
+        font-weight: 900;
+        color: #eeeeee;
+        margin-bottom: 16px;
+        @media (max-width: 600px) {
+          width: 100%;
+          margin: 10px 0 12px 0;
+          font-size: 16px;
+          font-weight: 900;
+          text-align: center;
+        }
+      }
+      .description {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 2;
+        color: #fffefe;
+        @media (max-width: 600px) {
+          width: 100%;
+          font-size: 14px;
+          line-height: 1.86;
+          text-align: center;
+          margin-bottom: 14px;
+        }
+      }
+    }
+  }
+}
+.order1 {
+  order: unset;
+}
+.order2 {
+  order: 2;
+  @media (max-width: 600px) {
+    order: unset;
+  }
+}
+
+.f01 {
+  width: 48%;
+  margin-right: 8%;
+  @media (max-width: 600px) {
+    width: 130%;
+  }
+}
+.f02 {
+  width: 50%;
+  margin-left: 9%;
+  @media (max-width: 600px) {
+    width: 130%;
+  }
+}
+.f03 {
+  width: 50%;
+  margin-right: 8%;
+  @media (max-width: 600px) {
+    width: 130%;
+  }
+}
+.f04 {
+  width: 40%;
+  margin-left: 5%;
+  @media (max-width: 600px) {
+    width: 130%;
+  }
+}
