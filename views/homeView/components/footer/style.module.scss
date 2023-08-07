@@ -1,0 +1,12 @@
+.footerContainer {
+  width: 70%;
+  color: white;
+  padding: 5% 10%;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  .link {
+    color: white;
+    margin: 0.5%;
+  }
+}
