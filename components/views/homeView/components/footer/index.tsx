@@ -101,6 +101,9 @@ const Footer = () => {
   ];
   return (
     <div className={s.footerContainer}>
+      <a href="/" className={s.topLink}>
+        Questions? Contact us.
+      </a>
       {linksList?.map((item) => (
         <a href={item?.href} className={s.link}>
           {item?.title}
