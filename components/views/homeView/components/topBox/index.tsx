@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./style.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 const TopBox = () => {
   return (
@@ -15,7 +16,9 @@ const TopBox = () => {
               alt="Netflix logo"
             />
           </div>
-          <button className={s.signInBtn}>Sign In</button>
+          <Link href="/signIn" className={s.btnLink}>
+            <button className={s.signInBtn}>Sign In</button>
+          </Link>
         </div>
         <h1 className={s.title}>Unlimited movies, TV shows, and anime</h1>
         <div className={s.subTitle}>Watch anywhere. Cancel anytime.</div>

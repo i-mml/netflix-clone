@@ -17,17 +17,19 @@
   margin: 0 8.5%;
 }
 
-.signInBtn {
+.btnLink {
   width: 80px;
-  height: 30px;
   margin: 2% 8.3% 0 auto;
-  border-radius: 0.25rem;
-  border: 0;
-  cursor: pointer;
-  color: white;
-  background-color: rgb(229, 9, 20);
-  font-weight: 600;
-  font-size: 15px;
+  .signInBtn {
+    height: 30px;
+    border-radius: 0.25rem;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    font-weight: 600;
+    font-size: 15px;
+  }
 }
 
 .title {

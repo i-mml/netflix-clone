@@ -1,9 +1,10 @@
 import React from "react";
 import s from "./style.module.scss";
 import Accordion from "../../../../common/according";
+import { AccordingType } from "../../../../../types/faq.type";
 
 const Faq = () => {
-  const collapseList = [
+  const collapseList: AccordingType[] = [
     {
       id: 1,
       title: "What can I watch on Netflix?",
@@ -46,7 +47,7 @@ const Faq = () => {
     <div className={s.faqContainer}>
       <h2 className={s.title}>Frequently Asked Questions</h2>
       {collapseList?.map((item) => (
-        <Accordion title={item?.title} content={item?.content} />
+        <Accordion {...item} />
       ))}
       <div className={s.bottomBox}>
         <div className={s.subTitle}>
