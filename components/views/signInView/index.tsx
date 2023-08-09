@@ -68,33 +68,31 @@ const SignInView = () => {
           }}
           validationSchema={signInSchema}
         >
-          {({ errors }) => (
-            <Form className={"createFormBody"}>
-              <Field name="email">
-                {({ field }: any) => (
-                  <input
-                    type="email"
-                    {...field}
-                    placeholder="Email address"
-                    className={s.input}
-                  />
-                )}
-              </Field>
-              <Field name="passsword">
-                {({ field }: any) => (
-                  <input
-                    type="passsword"
-                    {...field}
-                    placeholder="password"
-                    className={s.input}
-                  />
-                )}
-              </Field>
-              <button className={s.btn} type="submit">
-                Sign In
-              </button>
-            </Form>
-          )}
+          <Form className={"createFormBody"}>
+            <Field name="email">
+              {({ field }: any) => (
+                <input
+                  type="email"
+                  {...field}
+                  placeholder="Email address"
+                  className={s.input}
+                />
+              )}
+            </Field>
+            <Field name="passsword">
+              {({ field }: any) => (
+                <input
+                  type="passsword"
+                  {...field}
+                  placeholder="password"
+                  className={s.input}
+                />
+              )}
+            </Field>
+            <button className={s.btn} type="submit">
+              Sign In
+            </button>
+          </Form>
         </Formik>
         <div className={s.subTitle}>
           <div className={s.checkBoxContainer}>
