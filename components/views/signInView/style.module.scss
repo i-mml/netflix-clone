@@ -48,6 +48,10 @@
     border: none;
     color: #898c8f;
     font-size: 16px;
+    &:focus {
+      font-size: 12px;
+      outline: none;
+    }
   }
 
   .btn {

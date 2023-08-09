@@ -39,6 +39,15 @@
       border: 0.5px solid #bdbdbd;
       color: #bdbdbd;
       font-size: 14px;
+      &:focus {
+        font-size: 12px;
+        display: flex;
+        text-align: start;
+        outline: none;
+        &::placeholder {
+          margin-bottom: 25px;
+        }
+      }
     }
 
     .emailBtn {

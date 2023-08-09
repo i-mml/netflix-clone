@@ -70,6 +70,10 @@
   border: 0.5px solid #bdbdbd;
   color: #bdbdbd;
   font-size: 18px;
+  &:focus {
+    font-size: 12px;
+    outline: none;
+  }
 }
 
 .emailBtn {
