@@ -1,8 +1,22 @@
 import Image from "next/image";
 import React from "react";
 import s from "./style.module.scss";
+import * as Yup from "yup";
+import { Field, Form, Formik, FormikHelpers } from "formik";
+
+interface Values {
+  email?: string;
+  password?: string;
+}
 
 const SignInView = () => {
+  const signInSchema = Yup.object().shape({
+    email: Yup.string().required("Please enter a valid email or phone number."),
+    password: Yup.string().required(
+      "Your password must contain between 4 and 60 characters."
+    ),
+  });
+
   const linksList = [
     {
       id: 1,
@@ -47,9 +61,41 @@ const SignInView = () => {
       </div>
       <div className={s.bgText}>
         <h1 className={s.title}>Sign In</h1>
-        <input type="email" placeholder="Email address" className={s.input} />
-        <input type="passsword" placeholder="password" className={s.input} />
-        <button className={s.btn}>Sign In</button>
+        <Formik
+          initialValues={{}}
+          onSubmit={() => {
+            "success";
+          }}
+          validationSchema={signInSchema}
+        >
+          {({ errors }) => (
+            <Form className={"createFormBody"}>
+              <Field name="email">
+                {({ field }: any) => (
+                  <input
+                    type="email"
+                    {...field}
+                    placeholder="Email address"
+                    className={s.input}
+                  />
+                )}
+              </Field>
+              <Field name="passsword">
+                {({ field }: any) => (
+                  <input
+                    type="passsword"
+                    {...field}
+                    placeholder="password"
+                    className={s.input}
+                  />
+                )}
+              </Field>
+              <button className={s.btn} type="submit">
+                Sign In
+              </button>
+            </Form>
+          )}
+        </Formik>
         <div className={s.subTitle}>
           <div className={s.checkBoxContainer}>
             <input
