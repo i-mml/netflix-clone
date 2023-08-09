@@ -64,11 +64,11 @@ const SignInView = () => {
         <Formik
           initialValues={{}}
           onSubmit={() => {
-            "success";
+            console.log("success");
           }}
           validationSchema={signInSchema}
         >
-          <Form className={"createFormBody"}>
+          <Form>
             <Field name="email">
               {({ field }: any) => (
                 <input
