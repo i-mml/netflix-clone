@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import s from "./style.module.scss";
 import * as Yup from "yup";
-import { Field, Form, Formik, FormikHelpers } from "formik";
+import { Field, FieldAttributes, FieldProps, Form, Formik, FormikHelpers } from "formik";
 
 interface Values {
   email?: string;
@@ -70,7 +70,7 @@ const SignInView = () => {
         >
           <Form className={"createFormBody"}>
             <Field name="email">
-              {({ field }: any) => (
+              {({ field }: FieldProps) => (
                 <input
                   type="email"
                   {...field}
@@ -80,7 +80,7 @@ const SignInView = () => {
               )}
             </Field>
             <Field name="passsword">
-              {({ field }: any) => (
+              {({ field }: FieldProps) => (
                 <input
                   type="passsword"
                   {...field}
