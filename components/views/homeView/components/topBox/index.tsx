@@ -16,7 +16,7 @@ const TopBox = () => {
               alt="Netflix logo"
             />
           </div>
-          <Link href="/signIn" className={s.btnLink}>
+          <Link href="/signIn" >
             <button className={s.signInBtn}>Sign In</button>
           </Link>
         </div>
