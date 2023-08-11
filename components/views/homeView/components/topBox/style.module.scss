@@ -11,25 +11,31 @@
 
 .topBoxHeader {
   display: flex;
+  align-items: center;
+  padding: 0 5%;
 }
 
 .logo {
-  margin: 0 8.5%;
+  margin-right: auto;
+  position: relative;
+  width: 20%;
+  min-width: 100px;
+  @media (max-width: 1000px) {
+    width: 30%;
+  }
 }
 
-.btnLink {
+.signInBtn {
   width: 80px;
-  margin: 2% 8.3% 0 auto;
-  .signInBtn {
-    height: 30px;
-    border-radius: 0.25rem;
-    border: 0;
-    cursor: pointer;
-    color: white;
-    background-color: rgb(229, 9, 20);
-    font-weight: 600;
-    font-size: 15px;
-  }
+  margin-left: auto;
+  height: 30px;
+  border-radius: 0.25rem;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(229, 9, 20);
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .title {
@@ -37,7 +43,8 @@
   font-size: 48px;
   font-weight: 900;
   color: white;
-  margin: 18% auto 0;
+  margin: 30vh auto 0;
+  line-height: 2;
 }
 
 .subTitle {

@@ -14,13 +14,12 @@ const TopBox = () => {
               width={200}
               height={80}
               alt="Netflix logo"
+              layout="responsive"
             />
           </div>
-          <Link href="/signIn" >
-            <button className={s.signInBtn}>Sign In</button>
-          </Link>
+          <button className={s.signInBtn}>Sign In</button>
         </div>
-        <h1 className={s.title}>Unlimited movies, TV shows, and anime</h1>
+        <h1 className={s.title}>Unlimited movies, TV shows, and more</h1>
         <div className={s.subTitle}>Watch anywhere. Cancel anytime.</div>
         <div className={s.subTitle}>
           Ready to watch? Enter your email to create or restart your membership.
