@@ -48,6 +48,28 @@
     }
   }
 }
+.contentContainer {
+  position: relative;
+  width: 48%;
+}
+.firstVideoContainer {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 72%;
+  max-height: 52%;
+  position: absolute;
+  top: 47%;
+  left: 49.5%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  .video {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+}
 .order1 {
   order: unset;
 }

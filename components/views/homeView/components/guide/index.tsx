@@ -12,6 +12,8 @@ const Guide = () => {
       href: "/Images/tv.png",
       order: s.order2,
       className: s.f01,
+      video: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v",
+      videoContainerClass: s.firstVideoContainer
     },
     {
       id: 2,
@@ -45,7 +47,7 @@ const Guide = () => {
     <div className={s.guideContainer} id="how_to">
       {guidesList?.map((item) => (
         <div className={s.guideItem} key={item?.id}>
-          <div className={`${item?.className} ${item?.order}`}>
+          <div className={`${s.contentContainer} ${item?.className} ${item?.order}`}>
             <Image
               alt="guide image"
               src={item.href}
@@ -54,6 +56,13 @@ const Guide = () => {
               height={200}
               unoptimized
             />
+            {item?.video &&
+              <div className={item?.videoContainerClass}>
+                <video className={s.video} controls playsInline autoPlay muted loop>
+                  <source src={item?.video} type="video/mp4" />
+                </video>
+              </div>
+            }
           </div>
           <div className={s.textBox}>
             <h2 className={s.title}>{item.title}</h2>
