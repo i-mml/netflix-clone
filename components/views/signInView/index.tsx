@@ -10,12 +10,12 @@ interface Values {
 }
 
 const SignInView = () => {
-  const signInSchema = Yup.object().shape({
-    email: Yup.string().required("Please enter a valid email or phone number."),
-    password: Yup.string().required(
-      "Your password must contain between 4 and 60 characters."
-    ),
-  });
+  // const signInSchema = Yup.object().shape({
+  //   email: Yup.string().required("Please enter a valid email or phone number."),
+  //   password: Yup.string().required(
+  //     "Your password must contain between 4 and 60 characters."
+  //   ),
+  // });
 
   const linksList = [
     {
@@ -66,7 +66,7 @@ const SignInView = () => {
           onSubmit={() => {
             console.log("success");
           }}
-          validationSchema={signInSchema}
+          // validationSchema={signInSchema}
         >
           <Form>
             <Field name="email">
